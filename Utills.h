@@ -38,7 +38,7 @@ public:
 
     static std::vector<double> VUniform(std::vector<double> v){
         std::vector<double> out;
-        std::normal_distribution<double> dis(0, FI/2);
+        std::uniform_real_distribution<double> dis(0, FI/2);
         for(auto i:v)
             out.push_back(i*dis(gen));
         return out;
